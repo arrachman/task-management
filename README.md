@@ -9,6 +9,7 @@ Aplikasi web sederhana yang dibangun menggunakan React.js dengan fitur Task Mana
   - [Task Management](#task-management)
   - [Toko Online (Halaman Produk)](#toko-online-halaman-produk)
   - [Autentikasi (Login & Registrasi)](#autentikasi-login--registrasi)
+- [Default User Login](#default-user-login)
 - [Teknologi yang Digunakan](#teknologi-yang-digunakan)
 - [Kontribusi](#kontribusi)
 - [Lisensi](#lisensi)
@@ -73,9 +74,18 @@ Halaman Daftar Produk menampilkan daftar produk yang tersedia. Fitur-fitur utama
 Fitur autentikasi memungkinkan pengguna untuk membuat akun dan masuk ke aplikasi.
 
 * **Registrasi:** Pengguna dapat mengisi formulir pendaftaran dengan nama lengkap, email, dan kata sandi untuk membuat akun baru. Setelah pendaftaran berhasil (simulasi di sisi *client*), informasi pengguna akan disimpan dalam sesi *browser*.
-* **Login:** Pengguna dapat memasukkan *username* atau email dan kata sandi untuk masuk ke aplikasi. Jika kredensial cocok (simulasi dengan *username* "testuser" dan *password* "password"), pengguna akan dianggap berhasil login dan informasi sesi akan disimpan.
-* **Sesi:** Informasi pengguna yang login disimpan dalam `localStorage` sehingga sesi akan tetap ada meskipun halaman di-refresh.
+* **Login:** Pengguna dapat memasukkan *username* atau email dan kata sandi untuk masuk ke aplikasi.
+* **Sesi:** Informasi pengguna yang login disimpan dalam `localStorage` sehingga sesi akan tetap ada meskipun halaman di-*refresh*.
 * **Logout:** Pengguna dapat mengklik tombol "Logout" di *navbar* untuk menghapus informasi sesi dan kembali ke halaman login.
+
+## Default User Login
+
+Untuk tujuan pengembangan dan pengujian, Anda dapat menggunakan *default user* berikut untuk login:
+
+* **Username:** `admin`
+* **Password:** `admin`
+
+Harap dicatat bahwa akun ini hanya untuk tujuan pengembangan dan **tidak boleh digunakan untuk data sensitif atau lingkungan produksi**.
 
 ## Teknologi yang Digunakan
 

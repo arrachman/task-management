@@ -58,7 +58,7 @@ function AuthProvider({ children }: { children: React.ReactNode }) {
 // HOC (Higher-Order Component) untuk melindungi rute
 function RequireAuth({ children }: { children: React.ReactNode }) {
   const storedUser = localStorage.getItem('userSession');
-  return storedUser ? children : <Navigate to="/login" />;
+  return storedUser ? children : <Navigate to="/" />;
 }
 
 interface User {
@@ -105,7 +105,7 @@ function App() {
     setCurrentUser(null);
     localStorage.removeItem('userSession');
     const navigate = useNavigate(); // Hook untuk navigasi
-    navigate('/login'); // Redirect ke halaman login setelah logout
+    navigate('/'); // Redirect ke halaman login setelah logout
   };
   
     return (
