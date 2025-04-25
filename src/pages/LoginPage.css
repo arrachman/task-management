@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+
+  body.login-page-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f9;
+  }
+
+  body.login-page-active .wrapper {
+    display: flex; /* Pastikan wrapper tetap flex untuk menata isinya setelah login */
+    width: 100%;
+    min-height: 100vh; /* Gunakan min-height agar tetap responsif */
+    flex: none !important;
+  }
+
+  body.login-page-active .main-sidebar {
+    display: none !important; /* Sembunyikan sidebar saat login aktif */
+  }
+
+  body.login-page-active .content-wrapper {
+    margin: auto !important;
+  }
+
+  body.login-page-active .login-page {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  body.login-page-active .login-box {
+    width: 360px;
+  }
+
+  /* Tambahkan style berikut jika Anda ingin memastikan footer juga tersembunyi */
+  body.login-page-active .main-footer {
+    display: none !important;
+  }
